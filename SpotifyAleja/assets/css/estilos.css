@@ -1,0 +1,69 @@
+.banner{
+    background-image: url("../img/azul\ mago\ oz.jpg");
+    padding: 25%;
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+}
+
+.banner::after{
+
+    content:"";
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+    z-index: -1;
+
+}
+.fomdoboton{
+    background-color: rgb(179, 130, 224);
+}
+
+.canciones{
+    width: 60%;
+    height: 500px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 3%;
+    margin: auto;
+    
+}
+
+.canciones section{
+    
+    width: 100%;
+    height: 154px;
+    margin-top: 45px;
+    
+}
+
+.canciones img{
+
+    width: 40%;
+    height: 90px;
+    display: block;
+    margin: auto;
+    
+
+
+}
+
+.canciones h1{
+
+    color: black;
+    font-size: 14px;
+    text-align: center;
+}
+
+.canciones audio{
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+}
